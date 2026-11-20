@@ -1,0 +1,13 @@
+{
+  "lock_schema": "1.0.0",
+  "policy": "illustrative baseline; verify official release and commit before execution",
+  "runtime": {"python": "3.12.x", "node": "22.x", "ffmpeg": "7.x"},
+  "components": {
+    "remotion": {"version": "4.x", "pin_required": true, "source": "https://github.com/remotion-dev/remotion"},
+    "manim": {"version": "0.19.x", "pin_required": true, "source": "https://github.com/ManimCommunity/manim"},
+    "comfyui": {"version": "stable-release", "pin_required": true, "source": "https://github.com/Comfy-Org/ComfyUI"},
+    "whisper": {"version": "commit-required", "pin_required": true, "source": "https://github.com/openai/whisper"},
+    "whisperx": {"version": "commit-required", "pin_required": true, "source": "https://github.com/m-bain/whisperX"}
+  },
+  "record_per_run": ["commit_or_image_digest", "model_filename", "weights_license", "font_version", "cuda_or_cpu", "command_digest"]
+}

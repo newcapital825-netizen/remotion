@@ -1,0 +1,13 @@
+{
+  "status": "blocked",
+  "blocking_reasons": [
+    "source reference placeholder requires subject-matter verification",
+    "Arabic pronunciation and subtitle timing require human review"
+  ],
+  "gates": {
+    "scientific": "human_review_required",
+    "arabic": "human_review_required",
+    "visual": "draft_preview_only",
+    "technical": "success"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "success",
+  "operation": "prototype_lesson",
+  "dry_run": false,
+  "allowed_paths": [
+    "brief",
+    "storyboard",
+    "script",
+    "scenes",
+    "review",
+    "dist",
+    "logs"
+  ],
+  "timeout_seconds": 120,
+  "budget": {
+    "gpu_seconds": 0,
+    "api_credits": 0
+  },
+  "max_parallelism": 1,
+  "network_policy": "closed",
+  "approval_required": true,
+  "preview_status": "success",
+  "preview_detail": "dist/preview_512x288.mp4",
+  "elapsed_seconds": 23.67
+}

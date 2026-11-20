@@ -1,0 +1,10 @@
+{
+  "dry_run": true,
+  "allowed_paths": ["project/brief", "project/storyboard", "project/scenes", "project/derived", "project/logs"],
+  "timeout_seconds": 600,
+  "budget": {"gpu_seconds": 0, "api_credits": 0, "max_files": 30},
+  "max_parallelism": 1,
+  "network_policy": "closed",
+  "approval_required": true,
+  "operation": "project.plan"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Arabic Curriculum Video Project Manifest",
+  "type": "object",
+  "required": ["schema_version", "project_id", "locale", "rtl", "learning_objectives", "source_refs", "scenes", "profile", "approvals", "tool_versions", "artifacts", "checksums"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "project_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "locale": {"const": "ar"},
+    "rtl": {"const": true},
+    "learning_objectives": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "source_refs": {"type": "array", "items": {"type": "string"}},
+    "scenes": {"type": "array", "items": {"$ref": "#/$defs/scene"}, "minItems": 1},
+    "profile": {"type": "object", "required": ["width", "height", "fps", "preview_width", "preview_height"]},
+    "approvals": {"type": "object", "required": ["scientific", "arabic", "visual", "technical"]},
+    "tool_versions": {"type": "object"},
+    "artifacts": {"type": "array", "items": {"$ref": "#/$defs/artifact"}},
+    "checksums": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}
+  },
+  "$defs": {
+    "scene": {"type": "object", "required": ["scene_id", "objective", "narration_ar", "on_screen_text_ar", "visual_method", "duration_seconds", "acceptance_criteria"]},
+    "artifact": {"type": "object", "required": ["path", "kind", "status", "sha256"], "properties": {"path": {"type": "string"}, "kind": {"type": "string"}, "status": {"enum": ["success", "external_required", "blocked", "draft"]}, "sha256": {"type": "string"}}}
+  }
+}

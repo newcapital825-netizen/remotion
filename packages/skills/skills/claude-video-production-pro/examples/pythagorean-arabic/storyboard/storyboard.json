@@ -1,0 +1,38 @@
+{
+  "project_id": "pythagorean-arabic",
+  "status": "draft",
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "title": "السؤال",
+      "duration_seconds": 4,
+      "narration": "كيف نحسب طول الضلع المجهول في مثلث قائم؟",
+      "text": "كيف نحسب الضلع المجهول؟",
+      "visual": "triangle_intro"
+    },
+    {
+      "scene_id": "S02",
+      "title": "العلاقة",
+      "duration_seconds": 5,
+      "narration": "في المثلث القائم، مربع الوتر يساوي مجموع مربعي الضلعين القائمين.",
+      "text": "a² + b² = c²",
+      "visual": "manim_formula"
+    },
+    {
+      "scene_id": "S03",
+      "title": "مثال",
+      "duration_seconds": 6,
+      "narration": "إذا كان الضلعان القائمان ثلاثة وأربعة، فالوتر يساوي خمسة.",
+      "text": "3² + 4² = 5²",
+      "visual": "deterministic_example"
+    },
+    {
+      "scene_id": "S04",
+      "title": "تحقق",
+      "duration_seconds": 4,
+      "narration": "اسأل نفسك: هل المثلث قائم؟ ثم عوّض بالقيم وتحقق من الوحدة.",
+      "text": "تحقق: قائم؟ عوّض. راجع الوحدة.",
+      "visual": "remotion_summary"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "pythagorean-arabic",
+  "locale": "ar",
+  "rtl": true,
+  "learning_objectives": [
+    "أن يربط المتعلم بين أطوال أضلاع المثلث القائم والعلاقة a² + b² = c²."
+  ],
+  "source_refs": [
+    "مصدر المنهج: يُستبدل بمرجع كتاب/صفحة معتمد قبل التسليم."
+  ],
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "title": "السؤال",
+      "duration_seconds": 4,
+      "narration": "كيف نحسب طول الضلع المجهول في مثلث قائم؟",
+      "text": "كيف نحسب الضلع المجهول؟",
+      "visual": "triangle_intro",
+      "narration_ar": "كيف نحسب طول الضلع المجهول في مثلث قائم؟",
+      "on_screen_text_ar": "كيف نحسب الضلع المجهول؟",
+      "visual_method": "triangle_intro",
+      "acceptance_criteria": [
+        "objective is visible",
+        "Arabic text is deterministic",
+        "human review required"
+      ]
+    },
+    {
+      "scene_id": "S02",
+      "title": "العلاقة",
+      "duration_seconds": 5,
+      "narration": "في المثلث القائم، مربع الوتر يساوي مجموع مربعي الضلعين القائمين.",
+      "text": "a² + b² = c²",
+      "visual": "manim_formula",
+      "narration_ar": "في المثلث القائم، مربع الوتر يساوي مجموع مربعي الضلعين القائمين.",
+      "on_screen_text_ar": "a² + b² = c²",
+      "visual_method": "manim_formula",
+      "acceptance_criteria": [
+        "objective is visible",
+        "Arabic text is deterministic",
+        "human review required"
+      ]
+    },
+    {
+      "scene_id": "S03",
+      "title": "مثال",
+      "duration_seconds": 6,
+      "narration": "إذا كان الضلعان القائمان ثلاثة وأربعة، فالوتر يساوي خمسة.",
+      "text": "3² + 4² = 5²",
+      "visual": "deterministic_example",
+      "narration_ar": "إذا كان الضلعان القائمان ثلاثة وأربعة، فالوتر يساوي خمسة.",
+      "on_screen_text_ar": "3² + 4² = 5²",
+      "visual_method": "deterministic_example",
+      "acceptance_criteria": [
+        "objective is visible",
+        "Arabic text is deterministic",
+        "human review required"
+      ]
+    },
+    {
+      "scene_id": "S04",
+      "title": "تحقق",
+      "duration_seconds": 4,
+      "narration": "اسأل نفسك: هل المثلث قائم؟ ثم عوّض بالقيم وتحقق من الوحدة.",
+      "text": "تحقق: قائم؟ عوّض. راجع الوحدة.",
+      "visual": "remotion_summary",
+      "narration_ar": "اسأل نفسك: هل المثلث قائم؟ ثم عوّض بالقيم وتحقق من الوحدة.",
+      "on_screen_text_ar": "تحقق: قائم؟ عوّض. راجع الوحدة.",
+      "visual_method": "remotion_summary",
+      "acceptance_criteria": [
+        "objective is visible",
+        "Arabic text is deterministic",
+        "human review required"
+      ]
+    }
+  ],
+  "profile": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "preview_width": 512,
+    "preview_height": 288
+  },
+  "approvals": {
+    "scientific": "pending",
+    "arabic": "pending",
+    "visual": "pending",
+    "technical": "pending"
+  },
+  "tool_versions": {
+    "prototype_generator": "1.0.0",
+    "ffmpeg": "record_from_ffprobe"
+  },
+  "artifacts": [
+    {
+      "path": "brief/creative-brief.md",
+      "kind": "md",
+      "status": "success",
+      "sha256": "f92408005fed52c244fd290adb9a9b28fb8e79de6c1f339d3fc14c3b20e455bd"
+    },
+    {
+      "path": "storyboard/storyboard.json",
+      "kind": "json",
+      "status": "success",
+      "sha256": "deae691d91a2de416b587f0970785a38a9a59b12e4b321c4ef258bf33dc89e66"
+    },
+    {
+      "path": "script/approved-narration-ar.json",
+      "kind": "json",
+      "status": "success",
+      "sha256": "fe646d61754d18c8d274e0636cb8a9e8d23336074538073be8acd91559bae800"
+    },
+    {
+      "path": "scenes/scene-plan.json",
+      "kind": "json",
+      "status": "success",
+      "sha256": "155de6d5ee348d55b5d5216b4893a85f1afc62025d07aa758377a217f49295c5"
+    },
+    {
+      "path": "review/quality-report.json",
+      "kind": "json",
+      "status": "success",
+      "sha256": "3ee7d824a13eec4fc3f9333858e00affb3e344f4d9e0b70cf364327e0f460b62"
+    },
+    {
+      "path": "dist/preview_512x288.mp4",
+      "kind": "mp4",
+      "status": "success",
+      "sha256": "22ed4f99121a22b047c0f562bcbb9165c6aee14c47ebbefcce022f482def2e79"
+    }
+  ],
+  "checksums": {
+    "brief/creative-brief.md": "f92408005fed52c244fd290adb9a9b28fb8e79de6c1f339d3fc14c3b20e455bd",
+    "storyboard/storyboard.json": "deae691d91a2de416b587f0970785a38a9a59b12e4b321c4ef258bf33dc89e66",
+    "script/approved-narration-ar.json": "fe646d61754d18c8d274e0636cb8a9e8d23336074538073be8acd91559bae800",
+    "scenes/scene-plan.json": "155de6d5ee348d55b5d5216b4893a85f1afc62025d07aa758377a217f49295c5",
+    "review/quality-report.json": "3ee7d824a13eec4fc3f9333858e00affb3e344f4d9e0b70cf364327e0f460b62",
+    "dist/preview_512x288.mp4": "22ed4f99121a22b047c0f562bcbb9165c6aee14c47ebbefcce022f482def2e79"
+  }
+}
